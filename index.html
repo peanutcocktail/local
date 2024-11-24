@@ -1,0 +1,12 @@
+<html>
+<body>
+<pre></pre>
+<script>
+fetch("http://localhost:8080/index.json").then((res) => {
+  return res.json()
+}).then((res) => {
+  document.querySelector("pre").innerHTML = JSON.stringify(res,null,2)
+})
+</script>
+</body>
+</html>
