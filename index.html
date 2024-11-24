@@ -2,7 +2,7 @@
 <body>
 <pre></pre>
 <script>
-fetch("http://localhost:8080/index.json").then((res) => {
+fetch("http://192.168.1.103:42420/index.json").then((res) => {
   return res.json()
 }).then((res) => {
   document.querySelector("pre").innerHTML = JSON.stringify(res,null,2)
